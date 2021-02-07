@@ -342,7 +342,7 @@ async function starts() {
 					} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 					}
-					captionnya = `「 *REGISTRO DE USUÁRIO* 」\n O registro foi bem sucedido✅\n\nHoras: ${time}\nNome: ${pushname2}\nNúmero: wa.me/${sender.split("@")[0]}\nPara usar o bot por favor envie ${prefix}mp3 juntamente com o autor e nome da música\n\nTotal de usuários: ${user.length}`
+					captionnya = `「 *REGISTRO DE USUÁRIO* 」\n O registro foi bem sucedido✅\n\nNome: ${pushname2}\nNúmero: wa.me/${sender.split("@")[0]}\nPara usar o bot por favor envie ${prefix}mp3 juntamente com o autor e nome da música\n\nTotal de usuários: ${user.length}`
 					daftarimg = await getBuffer(ppimg)
 					client.sendMessage(from, daftarimg, image, {quoted: mek, caption: captionnya})
 					break 
